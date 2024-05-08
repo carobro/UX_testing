@@ -32,6 +32,7 @@ Improving usability involves several steps:
 - Allow users to navigate without interference.
 - Testing should be conducted individually to ensure unbiased results.
 - Identifying major usability issues typically requires testing with just five users.
+![alt text](images/image-2.png)
 
 Steve Jobs famously stated, "If a User is having a problem, it's our problem."
 
@@ -44,13 +45,10 @@ Effective usability work should occur throughout the design process:
 - Test the final design iteration.
 - Address usability issues promptly, as they often emerge during implementation.
 
-![alt text](image.png)
-Interaction Design Foundation - IxDF. (2016, June 6). What is Usability Evaluation?. Interaction Design Foundation - IxDF. https://www.interaction-design.org/literature/topics/usability-evaluation
-
 ## Testing Environment
 The crucial aspect is to involve real users and observe their interactions directly. Minimal equipment, like a notepad, suffices for documentation.
 
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 Interaction Design Foundation - IxDF. (2016, June 6). What is Usability Evaluation?. Interaction Design Foundation - IxDF. https://www.interaction-design.org/literature/topics/usability-evaluation
 
 ## Recruitment Planning Guidelines
