@@ -20,3 +20,15 @@ First-click testing determines where users start specific tasks on a webpage. Pa
 2. Define tasks targeting specific areas of website improvement.
 3. Formulate tasks as realistic scenarios for typical users.
 4. Provide an “I don’t know where to click” button to avoid random guesses. (First-click tests might also include a question asking why the participant clicked somewhere.)
+
+## A/B Testing
+- A/B testing, also known as split testing, is a quantitative user research method.
+- Researchers present two versions of the same design to different users to determine which performs better.
+- The "A" denotes the original design, while the "B" represents its variation.
+- Cost-effective: A/B testing can be conducted with live users after deployment, eliminating the need for expensive pre-launch testing environments.
+
+## Guerrilla Testing
+- Directly asking members of the public to participate in usability tests
+- Conducting the test immediately 
+- Offering a small token of gratitude for their time 
+- Despite its simplicity, guerrilla research yields actionable user feedback, comparable to traditional methods.
