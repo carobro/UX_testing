@@ -12,7 +12,7 @@ results in:
 --> What type of user test should I do?
 
 Depending of the User-Test-Type:
-1) How do I habe to formulate my questions?
+1) How do I have to formulate my questions?
 2)  What rating scale type should I use (Likert Scale, School grades, Agree/Disagree, ...)?
 3) What setting do I need (remote, w/o computer, paper, alone, group, observed)
 4) How much time do i have to plan?
