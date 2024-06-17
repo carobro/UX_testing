@@ -3,6 +3,17 @@ https://carobro.github.io/UX_testing/
 
 ![image](https://github.com/carobro/UX_testing/assets/38653703/72264af4-bccf-482d-b2c4-cf446eee3d85)
 
+clone repo
+
+`npm install`
+
+`npm start`
+
+after changes
+
+`npm run deploy`
+
+
 
 ## Concept for User Testing
 
