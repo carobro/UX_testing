@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/UX_testing/static/css/main.18613bfb.css",
-    "main.js": "/UX_testing/static/js/main.9a237d50.js",
+    "main.css": "/UX_testing/static/css/main.e0d63fb2.css",
+    "main.js": "/UX_testing/static/js/main.a9c33b53.js",
     "static/js/453.ed3810f9.chunk.js": "/UX_testing/static/js/453.ed3810f9.chunk.js",
-    "static/media/data.csv": "/UX_testing/static/media/data.98a3a8bad2b1144c7abc.csv",
-    "static/media/logo.svg": "/UX_testing/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/logo_user.png": "/UX_testing/static/media/logo_user.97bdc7fb55265c634f2a.png",
+    "static/media/data.csv": "/UX_testing/static/media/data.b4a5e21e9a5e834bdc09.csv",
     "index.html": "/UX_testing/index.html",
-    "main.18613bfb.css.map": "/UX_testing/static/css/main.18613bfb.css.map",
-    "main.9a237d50.js.map": "/UX_testing/static/js/main.9a237d50.js.map",
+    "main.e0d63fb2.css.map": "/UX_testing/static/css/main.e0d63fb2.css.map",
+    "main.a9c33b53.js.map": "/UX_testing/static/js/main.a9c33b53.js.map",
     "453.ed3810f9.chunk.js.map": "/UX_testing/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.18613bfb.css",
-    "static/js/main.9a237d50.js"
+    "static/css/main.e0d63fb2.css",
+    "static/js/main.a9c33b53.js"
   ]
 }
