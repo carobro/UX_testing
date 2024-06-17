@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './logo_user.png';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect } from 'react';
@@ -47,28 +47,29 @@ const App = () => {
 
   return (
     <div className="container my-5">
+      <img src={logo} alt = "" width={75} height={100} ></img>
       <h1 className="mb-4">Find your User-Test</h1>
       <div className="row">
         <div className="col-md-3">
           <div className="mb-3">
-            <label htmlFor="Wann_dropdown" className="form-label">When am I doing user tests (during, at benchmarks or at the end of development)?</label>
-            <select id="Wann_dropdown" name="Wann_dropdown" className="form-select" onChange={handleFilterChange}>
+            <label htmlFor="wann_dropdown" className="form-label">When am I doing user tests (during, at benchmarks or at the end of development)?</label>
+            <select id="wann_dropdown" name="wann_dropdown" className="form-select" onChange={handleFilterChange}>
               <option value=""> - </option>
-              {uniqueValues('Wann_dropdown').map(value => <option key={value} value={value}>{value}</option>)}
+              {uniqueValues('wann_dropdown').map(value => <option key={value} value={value}>{value}</option>)}
             </select>
           </div>
           <div className="mb-3">
-            <label htmlFor="Testuser" className="form-label">Who is the user group (demographical, social, educational, gender, mixture)?</label>
-            <select id="Testuser" name="Testuser" className="form-select" onChange={handleFilterChange}>
+            <label htmlFor="testuser_dropdown" className="form-label">Who is the user group (demographical, social, educational, gender, mixture)?</label>
+            <select id="testuser_dropdown" name="testuser_dropdown" className="form-select" onChange={handleFilterChange}>
               <option value=""> - </option>
-              {uniqueValues('Testuser').map(value => <option key={value} value={value}>{value}</option>)}
+              {uniqueValues('testuser_dropdown').map(value => <option key={value} value={value}>{value}</option>)}
             </select>
           </div>
           <div className="mb-3">
-            <label htmlFor="Anzahl der Testuser_dropdown" className="form-label">How large should be my test-user group?</label>
-            <select id="Anzahl der Testuser_dropdown" name="Anzahl der Testuser_dropdown" className="form-select" onChange={handleFilterChange}>
+            <label htmlFor="testuser_anzahl_dropdown" className="form-label">How large should be my test-user group?</label>
+            <select id="testuser_anzahl_dropdown" name="testuser_anzahl_dropdown" className="form-select" onChange={handleFilterChange}>
               <option value=""> - </option>
-              {uniqueValues('Anzahl der Testuser_dropdown').map(value => <option key={value} value={value}>{value}</option>)}
+              {uniqueValues('testuser_anzahl_dropdown').map(value => <option key={value} value={value}>{value}</option>)}
             </select>
           </div>
           <div className="mb-3">
@@ -87,7 +88,8 @@ const App = () => {
           </div>
         </div>
         <div className="col-md-9">
-          <table className="table table-striped">
+        <div class="table-responsive table-scroll">
+        <table class="table table-striped">
             <thead className="table-dark">
               <tr>
                 <th>Testart</th>
@@ -99,6 +101,7 @@ const App = () => {
                 <th>Skala</th>
                 <th>Zeit pro Teilnehmer</th>
                 <th>Setting</th>
+                <th>Links</th>
               </tr>
             </thead>
             <tbody>
@@ -113,10 +116,13 @@ const App = () => {
                   <td>{item.Skala}</td>
                   <td>{item['Zeit pro Teilnehmer']}</td>
                   <td>{item.Setting}</td>
+                  <td>{item['Weiterführende Links']}</td>
+                  <td>{item.Links}</td>
                 </tr>
               ))}
             </tbody>
           </table>
+        </div>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 .container {
-  max-width: 1200px;
+  max-width: 1700px;
 }
 
 .form-label {
@@ -21,6 +21,20 @@ h1 {
   text-align: center;
 }
 
-.mb-3 {
-  margin-bottom: 1rem;
+
+.table-responsive {
+  height: 60vw; /* Set a fixed height for the table body */
+  overflow-y: auto;
+}
+
+.table-scroll thead {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure headers stay above the body content */
+  background-color: #343a40; /* Ensure the header background color matches */
+}
+
+
+.table-scroll thead, .table-scroll tbody tr {
+  table-layout: fixed; /* Ensure table layout remains intact */
 }
