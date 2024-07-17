@@ -46,11 +46,13 @@ const App = () => {
   };
 
   return (
-    <div className="container my-5">
-      <img src={logo} alt = "" width={75} height={100} ></img>
-      <h1 className="mb-4">Find your User-Test</h1>
+    <div className="custom-container container my-h5">
+      <div className="header-container">
+        <img src={logo} alt="" width={75} height={100} />
+        <h1>Find your User-Test</h1>
+      </div>
       <div className="row">
-        <div className="col-md-3">
+        <div className="col-md-2">
           <div className="mb-3">
             <label htmlFor="wann_dropdown" className="form-label">When am I doing user tests (during, at benchmarks or at the end of development)?</label>
             <select id="wann_dropdown" name="wann_dropdown" className="form-select" onChange={handleFilterChange}>
@@ -80,49 +82,48 @@ const App = () => {
             </select>
           </div>
           <div className="mb-3">
-            <label htmlFor="Setting" className="form-label">Where will you to the user testing?</label>
+            <label htmlFor="Setting" className="form-label">Where will you do the user testing?</label>
             <select id="Setting" name="Setting" className="form-select" onChange={handleFilterChange}>
               <option value=""> - </option>
               {uniqueValues('Setting').map(value => <option key={value} value={value}>{value}</option>)}
             </select>
           </div>
         </div>
-        <div className="col-md-9">
-        <div class="table-responsive table-scroll">
-        <table class="table table-striped">
-            <thead className="table-dark">
-              <tr>
-                <th>Testart</th>
-                <th>Wann</th>
-                <th>Testuser</th>
-                <th>Anzahl der Testuser</th>
-                <th>Ziel</th>
-                <th>Rückmeldung</th>
-                <th>Skala</th>
-                <th>Zeit pro Teilnehmer</th>
-                <th>Setting</th>
-                <th>Links</th>
-              </tr>
-            </thead>
-            <tbody>
-              {filteredData.map((item, index) => (
-                <tr key={index}>
-                  <td>{item.Testart}</td>
-                  <td>{item.Wann}</td>
-                  <td>{item.Testuser}</td>
-                  <td>{item['Anzahl der Testuser']}</td>
-                  <td>{item.Ziel}</td>
-                  <td>{item.Rückmeldung}</td>
-                  <td>{item.Skala}</td>
-                  <td>{item['Zeit pro Teilnehmer']}</td>
-                  <td>{item.Setting}</td>
-                  <td>{item['Weiterführende Links']}</td>
-                  <td>{item.Links}</td>
+        <div className="col-md-10">
+          <div className="table-responsive table-scroll ">
+            <table className="table table-striped table-bordered">
+              <thead className="table-dark">
+                <tr>
+                  <th>Testart</th>
+                  <th>Wann</th>
+                  <th>Testuser</th>
+                  <th>Anzahl der Testuser</th>
+                  <th>Ziel</th>
+                  <th>Rückmeldung</th>
+                  <th>Skala</th>
+                  <th>Zeit pro Teilnehmer</th>
+                  <th>Setting</th>
+                  <th>Links</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+              </thead>
+              <tbody>
+                {filteredData.map((item, index) => (
+                  <tr key={index}>
+                    <td>{item.Testart}</td>
+                    <td>{item.Wann}</td>
+                    <td>{item.Testuser}</td>
+                    <td>{item['Anzahl der Testuser']}</td>
+                    <td>{item.Ziel}</td>
+                    <td>{item.Rückmeldung}</td>
+                    <td>{item.Skala}</td>
+                    <td>{item['Zeit pro Teilnehmer']}</td>
+                    <td>{item.Setting}</td>
+                    <td>{item.Literatur}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
